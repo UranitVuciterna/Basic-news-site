@@ -1,1 +1,1 @@
-# Basic-news-site
+# news-site
