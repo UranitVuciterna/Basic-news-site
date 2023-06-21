@@ -119,3 +119,12 @@ function query_post_type($query) {
     return $query;
     }
 }
+add_theme_support( 'post-thumbnails');
+
+function add_class_to_post_thumbnail($html, $post_id, $post_thumbnail_id, $size, $attr) {
+    $class = 'post-thumbnail'; // Replace with your desired class name
+    $html = str_replace('class="', 'class="' . $class . ' ', $html);
+    return $html;
+}
+add_filter('post_thumbnail_html', 'add_class_to_post_thumbnail', 10, 5);
+

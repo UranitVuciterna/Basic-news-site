@@ -41,9 +41,19 @@ get_header();
                                 <h2 class="news-subtitle"><?php echo $subtitle; ?></h2>
                             <?php endif; ?>
                         </header>
+                        <div style="width: 500px;
+                                    height: auto;">
+                            
+                            <?php if (has_post_thumbnail()) {
+    
+                                    the_post_thumbnail();
+                                }
+                                ?>
+                        </div>
+                            
 
-                        <div class="entry-content">
-                            <?php the_content(); ?>
+                        <div class="entry-excerpt">
+                            <?php the_excerpt(); ?>
                         </div>
                     </article>
                     <hr>
