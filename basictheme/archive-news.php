@@ -16,7 +16,12 @@ while (have_posts()) {
             </h1>
         </header>
 
-        <div class="entry-content">
+        <div class="featured-image">
+            <?php if (has_post_thumbnail()) {
+                
+                the_post_thumbnail();
+            }
+            ?>
             <?php the_content(); ?>
         </div>
     </article>

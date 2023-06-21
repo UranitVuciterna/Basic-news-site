@@ -14,7 +14,7 @@ body {
 
 a:link,
 a:visited {
-    color: #006ec3;
+    color: #000000;
 }
 
 p {
@@ -133,4 +133,19 @@ article.post h2 a:visited {
     flex-shrink: 0; /* Prevent sidebar from shrinking */
   }
 
- 
+ /* Post Thumbnail */
+
+ .post-thumbnail {
+    width: 500px; /* Set the desired width */
+    height: auto; /* Allow the height to adjust proportionally */
+}
+
+.featured-image img {
+    
+    width: 900px;
+    height: auto;
+}
+
+.sidebar h2 {
+    margin-left: 40px;
+}

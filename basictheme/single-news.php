@@ -21,9 +21,14 @@ while (have_posts()) {
             <?php endif; ?>
             
         </header>
+                
+        <div class="featured-image">
 
-        <div class="entry-content">
-            <?php the_content(); ?>
+            <?php
+            if (has_post_thumbnail()) {
+                the_post_thumbnail();
+            }
+            the_content(); ?>
         </div>
     
         <hr>
